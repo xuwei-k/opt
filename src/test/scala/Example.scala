@@ -1,9 +1,10 @@
 package example
 
 import opt._
+import Opt.not
 
 object Example extends App {
-  
+
   implicit class AnyOps[A](self: A) {
     def must_==(that: A) = {
       if(self == that) println(s"$self is equal to $that")
@@ -64,7 +65,7 @@ object Example extends App {
     case Opt(a) => 2
     case Not() => 3
   }
- 
+
   x3 must_== 2
- 
+
 }
