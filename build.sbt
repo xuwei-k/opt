@@ -1,6 +1,8 @@
 initialCommands in console := "import opt._"
 
-scalaVersion := "2.11.0-M6"
+scalaVersion := "2.11.0"
+
+licenses += ("MIT License" -> url("http://www.opensource.org/licenses/mit-license.php"))
 
 name := "opt"
 

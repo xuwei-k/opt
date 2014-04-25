@@ -2,7 +2,7 @@ package opt
 
 import Opt.not
 
-final class Opt[+A] private[opt](val value: A) extends AnyVal {
+final class Opt[+A] private[opt](private val value: A) extends AnyVal {
 
   def isEmpty: Boolean = value == null
 
